@@ -26,10 +26,12 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
+  
 }
 
 .logo img {
   width: 40px;
+  
 }
 
 nav {
@@ -131,6 +133,11 @@ nav a:hover {
   padding: 15px;
   font-size: 16px;
   font-weight: 500;
+}
+.card p {
+  color: #ff7aa2;
+  font-weight: 600;
+  padding-bottom: 15px;
 }
 
 /* ABOUT */
@@ -579,4 +586,122 @@ button:hover {
     bottom: 25px;
   }
 
+}
+/* TESTIMONIAL GRID */
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* TESTIMONIALS */
+
+.testimonials {
+  padding: 90px 8%;
+  text-align: center;
+}
+
+.testimonials h2 {
+  font-size: 42px;
+  margin-bottom: 50px;
+}
+
+/* TESTIMONIALS */
+
+.testimonials {
+  padding: 90px 8%;
+  text-align: center;
+}
+
+.testimonials h2 {
+  font-size: 34px;
+  margin-bottom: 40px;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.testimonial-card {
+  background: white;
+  padding: 25px;
+  border-radius: 25px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  text-align: center;
+  transition: 0.3s;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+}
+
+.testimonial-card p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+.testimonial-card h4 {
+  color: #ff7aa2;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.stars {
+  font-size: 24px;
+  color: gold;
+  margin-top: 10px;
+  letter-spacing: 2px;
+}
+
+.stats p {
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .stats {
+    flex-direction: column;
+    gap: 25px;
+  }
+}
+/* STATS SECTION */
+
+.stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  text-align: center;
+  padding: 40px 8%;
+  width: 100%;
+}
+
+.stats div {
+  min-width: 150px;
+}
+
+.stats h3 {
+  font-size: 32px;
+  color: #ff7aa2;
+  margin-bottom: 5px;
+}
+
+.stats p {
+  color: #666;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .stats {
+    flex-direction: column;
+    gap: 25px;
+  }
 }
